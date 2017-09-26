@@ -1,0 +1,8 @@
+header {
+	display: flex;
+	align-items: flex-end;
+	border: 1px solid black;
+	.site-heading, .tagline {
+		text-align: right;
+	}
+}

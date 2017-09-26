@@ -1,0 +1,14 @@
+.nav {
+	display: flex;
+	width: 100%;
+	align-items: space-between;
+	@extend %vertical-center;
+	ul {
+		padding: 0;
+	}
+	li {
+		list-style-type: none;
+		display: inline-block;
+		padding: 10px;
+	}
+}
