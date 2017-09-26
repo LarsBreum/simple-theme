@@ -2,6 +2,9 @@
 html {
   font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
 }
+body {
+	background: $color-bg-primary;
+}
 
 * {
 	box-sizing: border-box;
@@ -13,4 +16,8 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.container-fluid {
+	padding: 0;
 }

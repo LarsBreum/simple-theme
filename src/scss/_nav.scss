@@ -1,14 +1,49 @@
 .nav {
-	display: flex;
+	padding: 5px 0;
+	display: none;
 	width: 100%;
-	align-items: space-between;
 	@extend %vertical-center;
 	ul {
+		height: 100%;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;		
 		padding: 0;
+		width: 100%;
 	}
 	li {
 		list-style-type: none;
 		display: inline-block;
 		padding: 10px;
+	}
+}
+
+/*Burger icon*/
+.burger-icon {
+    display: inline-block;
+    cursor: pointer;
+    div {
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+	}
+	/* Rotate first bar */
+	.change .bar1 {
+	    -webkit-transform: rotate(-45deg) translate(-9px, 6px) ;
+	    transform: rotate(-45deg) translate(-9px, 6px) ;
+	}
+
+	/* Fade out the second bar */
+	.change .bar2 {
+	    opacity: 0;
+	}
+
+	/* Rotate last bar */
+	.change .bar3 {
+	    -webkit-transform: rotate(45deg) translate(-8px, -8px) ;
+	    transform: rotate(45deg) translate(-8px, -8px) ;
 	}
 }

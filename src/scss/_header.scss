@@ -1,8 +1,19 @@
 header {
+	background: $color-bg-content;
 	display: flex;
 	align-items: flex-end;
-	border: 1px solid black;
-	.site-heading, .tagline {
-		text-align: right;
+	flex-flow: column nowrap;
+	.site-heading {
+		margin-right: 10px;
+		display: inline-block;
+		margin-left: auto;
+	}
+	.flex {
+		display: flex;
+		flex-flow: row nowrap;
+		width: 100%;
+		padding: 20px;
+		align-items: center;
+		border-bottom: 5px solid #ffa500;
 	}
 }
