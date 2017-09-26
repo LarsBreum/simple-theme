@@ -5,8 +5,15 @@ const sass = require('gulp-sass');
 const cssnano = require('gulp-cssnano');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
+const webserver = require('gulp-webserver');
+const concat = require('gulp-concat');
+const rename = require("gulp-rename");
+const minifyjs = require('gulp-js-minify');
+const htmlmin = require('gulp-htmlmin');
+const clean = require('gulp-clean');
 
-gulp.task('workflow', function () {
+gulp.task('scss', ['cleanScss'], () => {
+	console.log('processing scss');
   gulp.src('./src/scss/**/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -19,7 +26,56 @@ gulp.task('workflow', function () {
 
   .pipe(gulp.dest('./dist/css/'))
 });
+gulp.task('cleanScss', () => {
+	return gulp.src('./dist/css')
+	.pipe(clean())
+});
 
-gulp.task('default', function () {
-  gulp.watch('./src/scss/**/*.scss', ['workflow']);
+gulp.task('js', ['cleanJs'], () => {
+	console.log('processing js');
+	return gulp.src('./src/js/*.js')
+	.pipe(sourcemaps.init())
+	.pipe(concat('app.js'))
+	.pipe(minifyjs('app.js'))
+	.pipe(rename('app.min.js'))
+	.pipe(sourcemaps.write('./'))
+	.pipe(gulp.dest('dist/js'))
+});
+gulp.task('cleanJs', () => {
+	return gulp.src('./dist/js')
+	.pipe(clean())
+});
+
+gulp.task('html', ['cleanHtml'], () => {
+	console.log('minifying html');
+	return gulp.src('src/*.html')
+	.pipe(sourcemaps.init())
+    .pipe(htmlmin({collapseWhitespace: true}))
+    .pipe(sourcemaps.write('./'))
+    .pipe(gulp.dest('dist'));
+});
+gulp.task('cleanHtml', () => {
+	return gulp.src('./dist/*.html')
+	.pipe(clean())
+});
+
+gulp.task('webserver', ['html', 'scss', 'js'], () => {
+	gulp.src('dist')
+	.pipe(webserver({
+		livereload: true,
+		directoryListing: false,
+		open: true,
+		fallback: 'index.html'
+	}));
+});
+
+gulp.task('watch', () => {
+	gulp.watch('./src/*.html', ['html']);
+	gulp.watch('./src/scss/**/*.scss', ['scss']);
+  	gulp.watch('./src/js/*.js', ['js']);
+} );
+
+
+gulp.task('default', ['webserver', 'watch'], () => {
+	
 });
