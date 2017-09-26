@@ -11,6 +11,29 @@ const rename = require("gulp-rename");
 const minifyjs = require('gulp-js-minify');
 const htmlmin = require('gulp-htmlmin');
 const clean = require('gulp-clean');
+const image = require('gulp-image');
+
+gulp.task('image', ['cleanImg'], () => {
+	console.log('processing images');
+	gulp.src(['src/images/*'])
+    .pipe(image({
+      pngquant: true,
+      optipng: false,
+      zopflipng: false	,
+      jpegRecompress: false,
+      mozjpeg: true,
+      guetzli: false,
+      gifsicle: true,
+      svgo: true,
+      concurrent: 10
+    }))
+    .pipe(gulp.dest('./dist/images'));
+});
+gulp.task('cleanImg', () => {
+	console.log('cleaning images');
+	return gulp.src('./dist/images')
+	.pipe(clean())
+});
 
 gulp.task('scss', ['cleanScss'], () => {
 	console.log('processing scss');
