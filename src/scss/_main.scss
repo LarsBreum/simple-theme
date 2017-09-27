@@ -75,3 +75,29 @@ article {
 		font-size: 0.8em;
 	}
 }
+
+/*contact section */
+.contact-holder {
+	@extend %nav;
+	bottom: 0;
+	background: $color-bg-primary;
+	width: 100%;
+	ul {
+		margin-right: $gutter;
+		justify-content: flex-end;
+	}
+	li {
+		
+	}
+	i {
+		font-size: 1.8em;
+		color: $color-accent-primary;
+	}
+}
+
+/*footer*/
+footer {
+	.copyright {
+		color: $color-font-secondary;
+	}
+}
