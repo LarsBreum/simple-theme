@@ -35,6 +35,9 @@
 		flex: 1 per-line(2);
 		margin: $gutter;
 		text-align: center;
+		@media screen and (min-width: $br-med) {
+			flex: 1 per-line(3);
+		}
 	}
 }
 
@@ -49,6 +52,7 @@
 	}
 }
 .button-holder {
+	align-self: flex-end;
 	display: flex;
 	flex-flow: row nowrap;
 	a {
@@ -78,11 +82,16 @@ article {
 
 /*contact section */
 .contact-holder {
+	margin: 0 auto;
+	position: fixed;
+	height: 54px;
+	width: 100%;
 	@extend %nav;
 	bottom: 0;
 	background: $color-bg-primary;
 	width: 100%;
 	ul {
+		width: 100%;
 		margin-right: $gutter;
 		justify-content: flex-end;
 	}

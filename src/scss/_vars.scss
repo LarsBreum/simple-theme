@@ -7,12 +7,22 @@ $font-size: 1rem;
 $line-height: 1.5;
 $font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
+//breakpoints
+$br-med: 768px;
+$br-lg: 992px;
 
 //misc
 $gutter-sm: 5px;
 $gutter: 10px;
 $gutter-section: 20px;
 $max-width: 320px;
+@media screen and (min-width: $br-med) {
+	$max-width: $br-med;
+}
+@media screen and (min-width: $br-lg) {
+	$max-width: $br-lg;
+}
+
 
 //colors
 $color-accent-primary: #ffa500; //orange

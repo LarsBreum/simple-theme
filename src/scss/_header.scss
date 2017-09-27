@@ -1,5 +1,6 @@
 header {
 	background: $color-bg-content;
+	margin-bottom: $gutter-section;
 	display: flex;
 	align-items: flex-end;
 	flex-flow: column nowrap;
@@ -41,6 +42,7 @@ header {
 .down-arw {
 	width: 33%;
 	height: 33%;
+	max-width: 100px;
 	display: block;
 	margin: 0 auto;
 	img {
