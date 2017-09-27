@@ -40,7 +40,6 @@
 
 /*portfolio section*/
 .project {
-	padding: 5px;
 	h4 {
 		color: $color-font-primary;
 	}
@@ -64,5 +63,15 @@
 	text-decoration: none;
 	&:hover {
 		font-weight: bold;
+	}
+}
+
+/*blog section*/
+article {
+	h3 {
+		color: $color-font-primary;
+	}
+	.byline {
+		font-size: 0.8em;
 	}
 }

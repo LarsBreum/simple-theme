@@ -15,8 +15,11 @@ section {
 
 .card {
 	border-radius: 0;
+	padding: $gutter-sm;
 }
-
+img {
+	max-width: 100%;
+}
 // Vertically center anything
 %vertical-center {
   display: flex;
