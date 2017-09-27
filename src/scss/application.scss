@@ -2,8 +2,12 @@
 
 // Base
 @import "vars";
+@import 'extensions';
+@import 'functions';
 
 // Components
 @import "base";
+@import 'typography';
 @import 'header';
 @import 'nav';
+@import 'main';

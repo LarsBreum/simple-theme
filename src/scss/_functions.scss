@@ -1,0 +1,9 @@
+@function px-to-pct($target, $context: $max-width) {
+	@return ($target / $context) * 100%;
+}
+
+@function per-line($items) {
+	$g-pct: px-to-pct($gutter) * 2;
+	$g-total: $items * $g-pct;
+	@return (100% / $items) - $g-total;
+}

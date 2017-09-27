@@ -1,0 +1,26 @@
+%nav {
+	padding: 5px 0;
+	width: 100%;
+	@extend %vertical-center;
+	ul {
+		height: 100%;
+		margin: 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: stretch;		
+		padding: 0;
+		width: 100%;
+		flex-flow: row wrap;
+		list-style-type: none;
+	}
+	li {
+		display: inline-block;
+		a {
+			display: block;
+			color: $color-font-primary;
+		    text-align: center;
+		    padding: 14px 16px;
+		    text-decoration: none;
+		}
+	}
+}

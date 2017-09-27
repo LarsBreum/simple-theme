@@ -3,15 +3,20 @@
 $font-style: normal;
 $font-variant: normal;
 $font-weight: normal;
-$font-color: #222;
 $font-size: 1rem;
 $line-height: 1.5;
 $font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
 
+
+//misc
+$gutter: 10px;
+$gutter-section: 20px;
+$max-width: 320px;
 
 //colors
 $color-accent-primary: #ffa500; //orange
 $color-bg-primary: #252525; //almost black
 $color-bg-content: #fefefe; //white;
 $color-bg-secondary: #020202; //black;
-$color-font-secondary: #fefefe;
+$color-font-primary: #252525; //almost balck
+$color-font-secondary: #fefefe; //white

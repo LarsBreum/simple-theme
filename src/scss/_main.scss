@@ -1,0 +1,68 @@
+/* About section*/
+.about-box-nav{
+	@extend %nav;
+	background: $color-bg-secondary;
+	ul {
+		align-items: flex-start;
+		justify-content: flex-start;
+		flex-flow: row wrap;
+	}
+	li a {
+	    color: $color-font-secondary;
+	}
+}
+.about-box {
+	h4 {
+		color: $color-font-primary;
+	}
+	.about-subject {
+		padding: $gutter;
+		display: none;
+	}
+	.code {
+		display: block;
+	}
+}
+/*Skills section */
+.skills-card {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+	.skill {
+		border: 3px solid $color-accent-primary;
+		padding: 5px;
+		display: inline-block;
+		flex: 1 per-line(2);
+		margin: $gutter;
+		text-align: center;
+	}
+}
+
+/*portfolio section*/
+.project {
+	padding: $gutter/2;
+	h4 {
+		color: $color-font-primary;
+	}
+	img {
+		max-width: 100%;
+		border: 3px solid $color-accent-primary;
+	}
+}
+.button-holder {
+	display: flex;
+	flex-flow: row nowrap;
+	a {
+		display: inline-block;
+		flex: 1 per-line(2);
+		margin: $gutter;
+	}
+}
+.portfolio-btn {
+	border: solid 2px $color-accent-primary;
+	background: $color-bg-primary;
+	text-decoration: none;
+	&:hover {
+		font-weight: bold;
+	}
+}

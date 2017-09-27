@@ -1,22 +1,6 @@
-.nav {
-	padding: 5px 0;
+.mobile-nav {
 	display: none;
-	width: 100%;
-	@extend %vertical-center;
-	ul {
-		height: 100%;
-		margin: 0;
-		display: flex;
-		justify-content: space-between;
-		align-items: stretch;		
-		padding: 0;
-		width: 100%;
-	}
-	li {
-		list-style-type: none;
-		display: inline-block;
-		padding: 10px;
-	}
+	@extend %nav;
 }
 
 /*Burger icon*/
