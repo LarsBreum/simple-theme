@@ -1,4 +1,4 @@
-const $nav = $('.nav');
+const $nav = $('.mobile-nav');
 const $burgerIcon = $('.burger-icon');
 const bars = $('.bar1, .bar2, .bar3');
 console.log(bars);
