@@ -7,8 +7,14 @@
     <title>Lars Breum | Online portfolio, blog and more</title>
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <!-- font awesome -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--slick css-->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick-theme.css"/>
+    <!-- Custom styles -->
     <link rel="stylesheet" href="css/application.css">
+    <!-- jQuery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   </head>
   <body>
@@ -22,12 +28,12 @@
     	</div>
     	<h1 class="site-heading">Lars Breum</h1>
     </div>
-    	<nav class="nav mobile-nav">
+    	<nav class="mobile-nav">
     		<ul>
-    			<li>Home</li>
-    			<li>About</li>
-    			<li>Blog</li>
-    			<li>Hire me</li>
+    			<li><a class="active-nav" href="#/">Home</a></li>
+    			<li><a href="#/">About</a></li>
+    			<li><a href="#/">Blog</a></li>
+    			<li><a href="#/">Hire me</a></li>
     		</ul>
     	</nav>
     	<div class="overlay">
@@ -37,13 +43,148 @@
           <div class="user-info">
         		<h2>Lars Breum</h2>
         		<h4>Front end Web Developer</h4>
-            <a class="down-arw"><img src="images/down-arrow.svg"></a>
+            <a class="down-arw" href="#about"><img src="images/down-arrow.svg"></a>
         </div>
     	</div>
     </header>
-    <div class="container">
-    </div>
+    <main class="container">
+      <secion class="about" id="about">
+        <h2 class="section-heading">About me</h2>
+        <div class="about-box">
+          <nav class="about-box-nav">
+            <ul>
+              <li><a class="active-nav" href="#/">Code</a></li>
+              <li><a href="#/">Education</a></li>
+              <li><a href="#/">Employment</a></li>
+              <li><a href="#/">More</a></li>
+            </ul>
+          </nav>
+          <div class="code card about-subject">
+            <h4>What is coding to me?</h4>
+            <p>Coding is a toolbox. And the tools are the languages, frameworks, API's and technologies neccessarry to build great things. I love building things. To me coding is my way of expressing myself in an artistic, logical or fun way. Great and beautiful code is important to me, whether I am writing a script to optimize my workflow in Gulp, or using Sass to create a beautiful website.</p>
+          </div>
+          <div class="education card about-subject">
+            <h4>My education</h4>
+            <p>I finished a technical highschool in Denmark in 2017 with <a href="#/">awesome grades</a>. While I had the final period I enrolled in a Front-end Webdevelopment course on Treehouse Inc. This online course taught me a lot about what I know today about front-end development.</p>
+          </div>
+          <div class="employment card about-subject">
+            <h4>Employment History</h4>
+            <p>I don't have any working experience as a developer yet. Currently, I work two part time jobs as a assistant pedagouge on a children's home, and as a phonesalesman. I also work in my spare time as a swim coach for children first learning to swim, and as assistent coach for a competetive swim team. In the summer months I work as a lifegaurd on the Danish beaches.</p>
+          </div>
+          <div class="more card about-subject">
+            <h4>More about me</h4>
+            <p>I have two major passions in life besides programming and coding. The first one is water and water sports. I love swimming, surfing, lifesaving and much much more. The second passion is learning. I read everyday about everything from investing to fitness and leanguage learning to cooking. I read everything. The feeling itself of being confused and not knowing exactly how to do something, is a feeling I hunt, becuase I know, <strong>development comes from outside the comfort zone.</strong></p>
+          </div>
+        </div>
+      </secion>
+      <section class="skills" id="skills">
+        <h2 class="section-heading">My skills</h2>
+        <p class="section-description">
+          These are some of the technologies and skills I know, love and use in my projects
+        </p>
+        <div class="card skills-card">
+          <div class="skill">JavaScript</div>
+          <div class="skill">jQuery</div>
+          <div class="skill">HTML5</div>
+          <div class="skill">CSS3</div>
+          <div class="skill">Sass</div>
+          <div class="skill">Bootstrap</div>
+          <div class="skill">Wordpress</div>
+          <div class="skill">JSON</div>
+          <div class="skill">AJAX</div>
+          <div class="skill">Gulp</div>
+          <div class="skill">Responsive</div>
+          <div class="skill">SVG</div>
+        </div>
+      </section>
+      <section class="portfolio" id="portfolio">
+        <h2 class="section-heading">Portfolio</h2>
+        <p class="section-description">These are a select few of the projects I have done. If you want to see all of them <a target="_blank" href="https://github.com/LarsBreum">Check out my github.</a></p>
+        <div class="portfolio-card">
+          <div class="project card">
+            <h4>Interactive Videoplayer</h4>
+            <img src="images/project-7.png">
+            <p>Interactive media is a central part of the modern web. In this project I was handed a video, a transcript and a mockup. I then developed a videoplayer with an interactive transcript and controls.</p>
+            <div class="button-holder">
+              <a href="http://larsbreumh.com/Techdegree-project-7-Interactive-videoplayer/" target="_blank" class="btn portfolio-btn">View</a>
+              <a href="https://github.com/LarsBreum/Techdegree-project-7-Interactive-videoplayer" target="_blank" class="btn portfolio-btn">Repo</a>
+            </div>
+          </div>
+          <div class="project card">
+            <h4>CSS to SASS</h4>
+            <img src="images/project-5.png">
+            <p>In this project, I had to refactor a responsive website from CSS3 to SASS. I had originally created the responsive website based on a mockup I recieved from Treehouse. I used a mobile first approach to the responsive design, making it perfect for small, as well as larger screens.</p>
+            <div class="button-holder">
+              <a href="http://larsbreumh.com/Techdegree-project-5-CSS-to-SASS/" target="_blank" class="btn portfolio-btn">View</a>
+              <a href="https://github.com/LarsBreum/Techdegree-project-5-CSS-to-SASS" target="_blank" class="btn portfolio-btn">Repo</a>
+            </div>
+          </div>
+          <div class="project card">
+            <h4>Searchable Employee Directory</h4>
+            <img src="images/project-10.png">
+            <p>In this project, AJAX and JSON was the new techologies I had to learn. To develop this application I used the RandomUserApi, to get JSON data to fill the app with employees. jQuery was used extensively both to handle the JSON data, but also to build UI elements, like the modal I created myself.</p>
+            <div class="button-holder">
+              <a href="http://larsbreumh.com/Techdegree-project-10-use-a-public-API/" target="_blank" class="btn portfolio-btn">View</a>
+              <a href="https://github.com/LarsBreum/Techdegree-project-10-use-a-public-API" target="_blank" class="btn portfolio-btn">Repo</a>
+            </div>
+          </div>
+          <div class="project card">
+            <h4>Online Registration Form</h4>
+            <img src="images/project-3.png">
+            <p>Web forms and information sharing is essentiel to many websites. In this project, I developed a site with a signup page for a fictiotious newsletter, using input elements and CSS. I created some subtle css animations and transitions to give the project a little more flavour.</p>
+            <div class="button-holder">
+              <a href="http://larsbreumh.com/Techdegree-project-3-online-registration-form/" target="_blank" class="btn portfolio-btn">View</a>
+              <a href="https://github.com/LarsBreum/Techdegree-project-3-online-registration-form" target="_blank" class="btn portfolio-btn">Repo</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="blog" id="blog">
+        <h2 class="section-heading">Blog and Other News</h2>
+        <p class="section-description">This is the latest news from my blog, to see all posts - <a href="#/">Check out my entire blog</a></p>
+        <div class="blog-holder">
+          <article class="post card">
+            <h3>Bloggin' header</h3>
+            <div class="blog-img">
+              <img src="images/ajax_logo.png">
+            </div>
+            <span class="byline">By: <strong>Lars Breum</strong> On: <strong>27-09-2017</strong> in <strong>news</strong></span>
+            <p class="post-snippet">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. <a href="#/">Read more...</a></p>
+          </article>
+          <article class="post card">
+            <h3>Bloggin' header</h3>
+            <div class="blog-img">
+              <img src="images/ajax_logo.png">
+            </div>
+            <span class="byline">By: <strong>Lars Breum</strong> On: <strong>27-09-2017</strong> in <strong>news</strong></span>
+            <p class="post-snippet">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper suscipit, posuere a, pede. <a href="#/">Read more...</a></p>
+          </article>
+        </div>
+      </section>
+      <section class="contact" id="contact">
+        <h2 class="section-heading">Contact</h2>
+        <p class="section-description">Connect with me on social media, write me an email or contact me directly with the form below</p>
+        <div class="contact-holder">
+          <ul>
+            <li><a target="_blank" href="https://github.com/LarsBreum"><i class="fa fa-github"></i></a></li>
+            <li><a target="_blank" href="https://www.linkedin.com/in/lars-breum-hansen-46b895127/"><i class="fa fa-linkedin"></i></a></li>
+            <li><a target="_blank" href="mailto:lars.breum.lh@gmail.com"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+      </section>
+      <footer>
+        <div class="site-info">
+          <h4 class="section-heading">About this site</h4>
+          <p class="section-description">I built this site as my own personal portfolio. I will work to transform it into a wordpress theme and my personal blog.<br>
+          Please feel free to copy, steal and use anything you find useful on this site - it's open source.</p>
+          <p class="copyright">&copy; LarsBreum 2017</p>
+        </div>
+      </footer>
+    </main>
   </div>
+  <!-- slick js -->
+  <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.js"></script>
+  <!--custom js -->
     <script src="js/app.min.js"></script>
   </body>
 </html>

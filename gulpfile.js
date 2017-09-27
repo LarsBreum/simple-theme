@@ -82,7 +82,7 @@ gulp.task('cleanHtml', () => {
 	.pipe(clean())
 });
 
-gulp.task('webserver', ['html', 'scss', 'js'], () => {
+gulp.task('webserver', ['html', 'scss', 'js', 'image'], () => {
 	gulp.src('dist')
 	.pipe(webserver({
 		livereload: true,
@@ -96,6 +96,7 @@ gulp.task('watch', () => {
 	gulp.watch('./src/*.html', ['html']);
 	gulp.watch('./src/scss/**/*.scss', ['scss']);
   	gulp.watch('./src/js/*.js', ['js']);
+  	gulp.watch('./src/images/*', ['image']);
 } );
 
 
