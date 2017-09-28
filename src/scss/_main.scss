@@ -1,5 +1,16 @@
+main {
+	display: flex;
+	flex-flow: column nowrap;
+	@media screen and (min-width: $br-lg) {
+		flex-flow: row wrap;
+	}
+}
+
 /* About section*/
 .about-box-nav{
+	@media screen and (min-width: $br-lg) {
+		flex: 1 per-line(2);
+	}
 	@extend %nav;
 	background: $color-bg-secondary;
 	ul {
@@ -9,6 +20,14 @@
 	}
 	li a {
 	    color: $color-font-secondary;
+	}
+}
+//about section
+.about {
+	margin-top: $gutter-section;
+	@media screen and (min-width: $br-lg) {
+		flex-basis: 50%;
+		margin-right: $gutter;
 	}
 }
 .about-box {
@@ -21,6 +40,12 @@
 	}
 	.code {
 		display: block;
+	}
+}
+.skills {
+	@media screen and (min-width: $br-lg) {
+		flex: 1 per-line(2);
+		margin-left: $gutter;
 	}
 }
 /*Skills section */
@@ -42,11 +67,16 @@
 }
 
 /*portfolio section*/
+.portfolio {
+	max-width: 100%;
+}
 .project {
+	height: 695px;
 	h4 {
 		color: $color-font-primary;
 	}
 	img {
+		width: 100%;
 		max-width: 100%;
 		border: 3px solid $color-accent-primary;
 	}

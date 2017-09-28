@@ -1,15 +1,31 @@
-$(document).ready(function(){
-  $('.portfolio-card').slick({
-  	arrows: false,
-  	autoplay: true,
-  	autoplaySpeed: 5000
-  });
-});
+
 
 $(document).ready(function(){
-  $('.blog-holder').slick({
-  	arrows: false,
-  	autoplay: true,
-  	autoplaySpeed: 7000
-  });
+  const windowWidth = window.matchMedia("(min-width: 768px)");
+
+  if (windowWidth.matches) {
+      $('.portfolio-card').slick({
+        slidesToShow: 2,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000
+      });
+      $('.blog-holder').slick({
+        slidesToShow: 2,
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 7000
+      });
+  } else {
+    $('.portfolio-card').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 5000
+      });
+    $('.blog-holder').slick({
+        arrows: false,
+        autoplay: true,
+        autoplaySpeed: 7000
+      });
+  }
 });

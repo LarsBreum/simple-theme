@@ -1,4 +1,5 @@
 header {
+	margin-top: 0;
 	background: $color-bg-content;
 	margin-bottom: $gutter-section;
 	display: flex;
@@ -21,9 +22,13 @@ header {
 }
 .overlay {
 	width: 100%;
-	background: #ffffff url("../images/waves.jpg") no-repeat center / cover;
 	color: $color-font-secondary;
 	height: 100vh;
+	max-height: 600px;
+	background: #ffffff url("../images/waves-sm.jpg") no-repeat center / cover;
+	@media screen and (min-width: $br-lg) {
+		background: #ffffff url("../images/waves-lg.jpg") no-repeat center / cover;
+	}	
 }
 .user-image {
 	height: 207px;

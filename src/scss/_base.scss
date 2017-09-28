@@ -9,8 +9,9 @@ body {
 * {
 	box-sizing: border-box;
 }
-section {
+section, footer, header {
 	margin-top: $gutter-section;
+	width: 100%;
 }
 
 .card {
