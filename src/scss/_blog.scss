@@ -10,6 +10,10 @@
 	background: $color-bg-content;
 	&:first-child {
 		flex: 1 per-line(1);
+		.blog-img {
+			float: right;
+			margin-bottom: 1rem;
+		}
 	}
 	@extend %divider-border;
 	@media screen and (min-width: $br-lg) {
@@ -26,4 +30,3 @@
 .post-body {
 	padding: $gutter-sm $gutter-sm 0 $gutter-sm;
 }
-

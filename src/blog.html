@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <!-- font awesome -->
     <link rel="stylesheet" href="css/style.css.css">
+    <link rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+">
     <!--slick css-->
     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.0/slick/slick.min.css"/>
     <!-- Custom styles -->
@@ -36,12 +38,29 @@
     		</ul>
     	</nav>
     </header>
-    <main class="container">
+    <div class="row">
+    <aside class="col col-md-2">
+       <nav class="desktop-nav">
+        <ul>
+          <li><a class="active-nav" href="index.html"><i class="fa fa-home"></i></a></li>
+          <li><a href="#about"><i class="fa fa-question-circle-o"></i></a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="page.html">Page Template</a></li>
+          <li><a href="blog.html">Blog Template</a></li>
+        </ul>
+      </nav>
+     </aside>
+    <main class="main-blog col col-md-10">
       <div class="container-fluid blog-container">
         <article class="blog-post">
             <div class="post-header">
             <h2 class="blog-heading">This is a blog template</h2>
             <p class="subheading">Blog templates are awesome</p>
+            <div class="blog-img">
+              <img alt="ajax logo" src="images/ajax_logo.png">
+            </div>
+            <span class="byline">By: <strong>Lars Breum</strong> On: <strong>27-09-2017</strong> in <strong>news</strong></span>
           </div>
           <div class="article-body">
             <p>
@@ -113,9 +132,10 @@
             </p>
           </div>
         </article>
-        
     </div>
-      <footer>
+    </main>
+  </div>
+    <footer>
         <div class="site-info">
           <h4 class="section-heading">About this site</h4>
           <p class="section-description">I built this site as my own personal portfolio. I will work to transform it into a wordpress theme and my personal blog.<br>
@@ -123,7 +143,6 @@
           <p class="copyright">&copy; LarsBreum 2017</p>
         </div>
       </footer>
-    </main>
     <div class="contact-holder">
           <ul class="container">
             <li><a target="_blank" href="https://github.com/LarsBreum">

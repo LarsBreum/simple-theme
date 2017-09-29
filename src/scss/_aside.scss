@@ -1,0 +1,6 @@
+aside {
+	display: none;
+	@media screen and (min-width: $br-lg) {
+		display initial;
+	}
+}
