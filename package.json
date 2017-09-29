@@ -22,6 +22,7 @@
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
     "gulp-cssnano": "^2.1.2",
+    "gulp-fontmin": "^0.7.4",
     "gulp-htmlmin": "^3.0.0",
     "gulp-image": "^3.0.0",
     "gulp-js-minify": "0.0.3",

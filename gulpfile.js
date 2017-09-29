@@ -12,6 +12,15 @@ const minifyjs = require('gulp-js-minify');
 const htmlmin = require('gulp-htmlmin');
 const clean = require('gulp-clean');
 const image = require('gulp-image');
+const fontmin = require('gulp-fontmin');
+
+gulp.task('font', () => {
+	return gulp.src('src/fonts/*.ttf')
+        .pipe(fontmin({
+        	fontPath: './src/fonts/**'
+        }))
+        .pipe(gulp.dest('dist/fonts'));
+});
 
 gulp.task('image', ['cleanImg'], () => {
 	console.log('processing images');
@@ -82,7 +91,7 @@ gulp.task('cleanHtml', () => {
 	.pipe(clean())
 });
 
-gulp.task('webserver', ['html', 'scss', 'js', 'image'], () => {
+gulp.task('webserver', ['html', 'scss', 'js', 'image', 'font'], () => {
 	gulp.src('dist')
 	.pipe(webserver({
 		livereload: true,
