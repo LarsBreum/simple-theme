@@ -12,10 +12,12 @@ html {
 	padding: $gutter-sm $gutter-sm 1.25rem $gutter-sm;
 }
 a {
+	transition: font-weight .1s linear;
 	color: $color-accent-primary;
-	text-decoration: underline;
 	&:hover {
 		font-weight: bold;
+		color: $color-accent-primary;
+		text-decoration: underline;
 	}
 }
 .active-nav {
