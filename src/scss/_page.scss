@@ -1,0 +1,15 @@
+.page-article {
+	width: 100%;
+	margin: 0;
+	background: $color-bg-content;
+}
+.article-header{
+	padding: $gutter-section $gutter-sm 0 $gutter-sm;
+	@extend %divider-border;
+	h2 {
+		color: $color-font-primary;
+	}
+}
+.article-body {
+	padding: $gutter-sm $gutter-sm 0 $gutter-sm;
+}
