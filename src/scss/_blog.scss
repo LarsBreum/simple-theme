@@ -1,0 +1,26 @@
+.blog-container {
+	display: flex;
+	flex-flow: column wrap;
+	@media screen and (min-width: $br-lg) {
+		flex-flow: row wrap;
+	}
+}
+.blog-post {
+	margin: 0;
+	background: $color-bg-content;
+	@extend %divider-border;
+	@media screen and (min-width: $br-lg) {
+		flex: 1 per-line(2);
+		margin: $gutter;
+	}
+}
+.post-header{
+	padding: $gutter-section $gutter-sm 0 $gutter-sm;
+	h2 {
+		color: $color-font-primary;
+	}
+}
+.post-body {
+	padding: $gutter-sm $gutter-sm 0 $gutter-sm;
+}
+
