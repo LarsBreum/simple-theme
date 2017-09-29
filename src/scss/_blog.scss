@@ -8,6 +8,9 @@
 .blog-post {
 	margin: 0;
 	background: $color-bg-content;
+	&:first-child {
+		flex: 1 per-line(1);
+	}
 	@extend %divider-border;
 	@media screen and (min-width: $br-lg) {
 		flex: 1 per-line(2);
