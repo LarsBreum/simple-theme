@@ -17,15 +17,20 @@
   <body>
   	<div class="container-fluid">
     <header>
-    	<div class="flex">
-    	<div class="burger-icon">
-    		<div class="bar1"></div>
-  			<div class="bar2"></div>
-  			<div class="bar3"></div>
-    	</div>
-    	<h1 class="site-heading">Lars Breum</h1>
+    	<div class="top-header">
+    		<div class="flex container">
+		    	<div class="burger-icon">
+		    		<div class="bar1"></div>
+		  			<div class="bar2"></div>
+		  			<div class="bar3"></div>
+		    	</div>
+          <div class="site-logo">
+            <img class="#/" alt="LB logo">
+          </div>
+		    	<h1 class="site-heading">Lars Breum</h1>
+    		</div>
     </div>
-    	<nav class="mobile-nav">
+    	<nav class="mobile-nav container">
     		<ul>
     			<li><a class="active-nav" href="index.html">Home</a></li>
     			<li><a href="#about">About Me</a></li>
@@ -39,13 +44,14 @@
         <div class="user-image">
           <img alt="Lars breum hansen - online portfolio" src="images/lars-breum-hansen-big.jpg">
         </div>
-          <div class="user-info">
+          <div class="overlay-text">
         		<h2>Lars Breum</h2>
         		<h4>Front end Web Developer</h4>
             <a class="down-arw" href="#about"><img alt="down-arrow svg" src="images/down-arrow.svg"></a>
         </div>
     	</div>
     </header>
+    <div class="row">
     <main class="container">
       <secion class="about" id="about">
         <h2 class="section-heading">About me</h2>
@@ -96,7 +102,7 @@
           <div class="skill">SVG</div>
         </div>
       </section>
-      <section class="portfolio" id="portfolio">
+      <section class="portfolio-section" id="portfolio">
         <h2 class="section-heading">Portfolio</h2>
         <p class="section-description">These are a select few of the projects I have done. If you want to see all of them <a target="_blank" href="https://github.com/LarsBreum">Check out my github.</a></p>
         <div class="portfolio-card">

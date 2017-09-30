@@ -11,13 +11,16 @@ header {
 		margin-left: auto;
 		color: $color-font-primary;
 	}
+	.top-header {
+		width: 100%;
+		border-bottom: 5px solid #ffa500;
+	}
 	.flex {
 		display: flex;
 		flex-flow: row nowrap;
 		width: 100%;
 		padding: 20px;
 		align-items: center;
-		border-bottom: 5px solid #ffa500;
 	}
 }
 .overlay {
@@ -41,7 +44,7 @@ header {
 		border: 5px solid $color-accent-primary;
 	}
 }
-.user-info {
+.overlay-text {
 	text-align: center;
 }
 .down-arw {

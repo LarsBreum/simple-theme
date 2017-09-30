@@ -1,3 +1,14 @@
+/*this is all specific to to home.php page*/
+.blog-overlay {
+	max-height: 200px;
+	.overlay-text {
+		height: 100%;
+		h2,h4 {
+			color: $color-accent-primary;
+		}
+	}
+}
+
 .blog-container {
 	display: flex;
 	flex-flow: column wrap;

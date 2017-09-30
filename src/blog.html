@@ -19,27 +19,35 @@
   <body>
   	<div class="container-fluid">
     <header>
-    	<div class="flex">
-    	<div class="burger-icon">
-    		<div class="bar1"></div>
-  			<div class="bar2"></div>
-  			<div class="bar3"></div>
-    	</div>
-    	<h1 class="site-heading">Lars Breum</h1>
+      <div class="top-header">
+        <div class="flex container">
+          <div class="burger-icon">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+          <h1 class="site-heading">Lars Breum</h1>
+        </div>
     </div>
-    	<nav class="mobile-nav">
-    		<ul>
-    			<li><a class="active-nav" href="index.html">Home</a></li>
-    			<li><a href="#about">About Me</a></li>
-    			<li><a href="#skills">Skills</a></li>
-    			<li><a href="#portfolio">Portfolio</a></li>
+      <nav class="mobile-nav container">
+        <ul>
+          <li><a class="active-nav" href="index.html">Home</a></li>
+          <li><a href="#about">About Me</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#portfolio">Portfolio</a></li>
           <li><a href="page.html">Page Template</a></li>
           <li><a href="blog.html">Blog Template</a></li>
-    		</ul>
-    	</nav>
-    </header>
+        </ul>
+      </nav>
+      <div class="overlay blog-overlay">
+          <div class="overlay-text">
+            <h2>Blog</h2>
+            <h4>News, ideas and other shareworthy thoughts</h4>
+        </div>
+      </div>
+    </header> 
     <div class="row">
-    <aside class="col col-md-2">
+    <!-- <aside class="col col-md-2">
        <nav class="desktop-nav">
         <ul>
           <li><a class="active-nav" href="index.html"><i class="fa fa-home"></i></a></li>
@@ -50,9 +58,9 @@
           <li><a href="blog.html">Blog Template</a></li>
         </ul>
       </nav>
-     </aside>
+     </aside> -->
     <main class="main-blog col col-md-10">
-      <div class="container-fluid blog-container">
+      <div class="container blog-container">
         <article class="blog-post">
             <div class="post-header">
             <h2 class="blog-heading">This is a blog template</h2>
@@ -133,16 +141,16 @@
           </div>
         </article>
     </div>
-    </main>
-  </div>
-    <footer>
+        <footer>
         <div class="site-info">
           <h4 class="section-heading">About this site</h4>
           <p class="section-description">I built this site as my own personal portfolio. I will work to transform it into a wordpress theme and my personal blog.<br>
           Please feel free to copy, steal and use anything you find useful on this site - it's open source.</p>
           <p class="copyright">&copy; LarsBreum 2017</p>
         </div>
-      </footer>
+      </footer> 
+    </main>
+  </div>
     <div class="contact-holder">
           <ul class="container">
             <li><a target="_blank" href="https://github.com/LarsBreum">

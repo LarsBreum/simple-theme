@@ -1,5 +1,6 @@
 main {
 	display: flex;
+	margin: 0 auto;
 	flex-flow: column nowrap;
 	@media screen and (min-width: $br-lg) {
 		flex-flow: row wrap;
@@ -67,7 +68,7 @@ main {
 }
 
 /*portfolio section*/
-.portfolio {
+.portfolio-section {
 	max-width: 100%;
 }
 .project {

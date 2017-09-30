@@ -24,6 +24,12 @@
 		}
 	}
 }
+// Vertically center anything
+%vertical-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 %divider-border {
 	border-bottom: 3px solid $color-accent-primary;
